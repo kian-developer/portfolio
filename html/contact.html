@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تماس با من | کیان حسینی نسب</title>
+    <!-- آیکون‌های FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- استایل اصلی پروژه -->
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <!-- پس‌زمینه پویا با هاله نئونی -->
+    <div class="glow-bg"></div>
+
+    <!-- هدر -->
+    <header>
+      <a href="index.html" class="logo glow-text">K.</a>
+      <button class="hamburger" id="hamburger" aria-label="منو">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="navMenu">
+        <ul>
+          <li><a href="index.html#about" class="nav-link">درباره من</a></li>
+          <li><a href="index.html#skills" class="nav-link">مهارت‌ها</a></li>
+          <li><a href="index.html#projects" class="nav-link">پروژه‌ها</a></li>
+          <li><a href="contact.html" class="nav-link active">تماس با من</a></li>
+        </ul>
+      </nav>
+      <a
+        href="../link/files.zip"
+        download="Kian_Hosseini_Resume.zip"
+        class="btn-cv pulse-btn"
+      >
+        <i class="fas fa-download"></i> دانلود رزومه
+      </a>
+    </header>
+
+    <!-- بخش اصلی تماس با من -->
+    <main class="contact-page">
+      <section class="contact-hero reveal">
+        <span class="section-tag">ارتباط مستقیم</span>
+        <h1 class="glow-text">بیایید با هم همکاری کنیم!</h1>
+        <p class="section-desc">
+          برای سفارش پروژه، مشاوره یا طرح هرگونه سوال می‌توانید از طریق فرم زیر
+          یا شبکه‌های اجتماعی با من در ارتباط باشید.
+        </p>
+      </section>
+
+      <div class="contact-container reveal">
+        <!-- کارت‌های اطلاعات تماس -->
+        <div class="contact-info-cards">
+          <div class="info-card tilt-card">
+            <div class="info-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="info-details">
+              <h3>ایمیل مستقیم</h3>
+              <p>جهت ارسال پروپوزال و پیام‌های رسمی</p>
+              <a href="mailto:thkthk919@gmail.com" class="info-link"
+                >thkthk919@gmail.com</a
+              >
+            </div>
+          </div>
+
+          <div class="info-card tilt-card">
+            <div class="info-icon">
+              <i class="fab fa-telegram"></i>
+            </div>
+            <div class="info-details">
+              <h3>تلگرام</h3>
+              <p>برای گفتگوی سریع و پاسخگویی آنی</p>
+              <a
+                href="https://t.me/your_username"
+                target="_blank"
+                class="info-link"
+                >ارسال پیام در تلگرام</a
+              >
+            </div>
+          </div>
+
+          <div class="info-card tilt-card">
+            <div class="info-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="info-details">
+              <h3>موقعیت مکانی</h3>
+              <p>ایران، آماده همکاری به‌صورت ریموت (دورکاری)</p>
+              <span class="info-status">🟢 آماده برای پروژه‌های جدید</span>
+            </div>
+          </div>
+
+          <!-- شبکه‌های اجتماعی -->
+          <div class="social-connect-box tilt-card">
+            <h3>من را دنبال کنید</h3>
+            <div class="social-links-grid">
+              <a
+                href="https://github.com/kian-developer"
+                target="_blank"
+                class="social-btn"
+              >
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <a href="https://linkedin.com" target="_blank" class="social-btn">
+                <i class="fab fa-linkedin"></i> LinkedIn
+              </a>
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                class="social-btn"
+              >
+                <i class="fab fa-instagram"></i> Instagram
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- فرم تماس حرفه‌ای -->
+        <div class="contact-form-wrapper tilt-card">
+          <form id="contactForm" class="contact-form">
+            <h2>ارسال پیام</h2>
+
+            <div class="input-group">
+              <label for="name"
+                ><i class="fas fa-user"></i> نام و نام خانوادگی</label
+              >
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="مثلاً: علی محمدی"
+                required
+              />
+            </div>
+
+            <div class="input-group">
+              <label for="email"><i class="fas fa-at"></i> آدرس ایمیل</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="example@gmail.com"
+                required
+              />
+            </div>
+
+            <div class="input-group">
+              <label for="subject"><i class="fas fa-tag"></i> موضوع پیام</label>
+              <select id="subject" name="subject" required>
+                <option value="" disabled selected>انتخاب موضوع...</option>
+                <option value="project">سفارش پروژه جدید</option>
+                <option value="consultation">مشاوره فنی</option>
+                <option value="hiring">پیشنهاد شغلی / دورکاری</option>
+                <option value="other">سایر موارد</option>
+              </select>
+            </div>
+
+            <div class="input-group">
+              <label for="message"
+                ><i class="fas fa-comment-dots"></i> متن پیام</label
+              >
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="توضیحات پروژه یا سوال خود را بنویسید..."
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn-primary glow-btn submit-btn">
+              <i class="fas fa-paper-plane"></i> ارسال پیام
+            </button>
+            <p id="formStatus" class="form-status-msg"></p>
+          </form>
+        </div>
+      </div>
+
+      <!-- بخش سوالات متداول (FAQ) -->
+      <section class="faq-section reveal">
+        <span class="section-tag">پاسخ به سوالات شما</span>
+        <h2>سوالات متداول</h2>
+        <div class="faq-grid">
+          <div class="faq-item tilt-card">
+            <h4>
+              <i class="fas fa-question-circle"></i> چقدر زمان می‌برد تا به
+              پیام‌ها پاسخ دهید؟
+            </h4>
+            <p>
+              معمولاً تمامی ایمیل‌ها و پیام‌های تلگرام در کمتر از ۲۴ ساعت پاسخ
+              داده می‌شوند.
+            </p>
+          </div>
+          <div class="faq-item tilt-card">
+            <h4>
+              <i class="fas fa-question-circle"></i> آیا امکان همکاری به‌صورت
+              دورکاری وجود دارد؟
+            </h4>
+            <p>
+              بله، من آماده همکاری به‌صورت پاره‌وقت، تمام‌وقت و پروژه‌ای به‌صورت
+              ریموت هستم.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- فوتر -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-col">
+          <a href="index.html" class="logo glow-text">K.</a>
+          <p style="color: var(--text-gray); margin-top: 1rem">
+            کیان حسینی نسب؛ توسعه‌دهنده فرانت‌اند با علاقه به ساخت تجربه‌های وب
+            زیبا و تعاملی.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>لینک‌های سریع</h4>
+          <ul>
+            <li><a href="index.html#about">درباره من</a></li>
+            <li><a href="index.html#projects">پروژه‌ها</a></li>
+            <li><a href="contact.html">تماس با من</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>خدمات</h4>
+          <ul>
+            <li>توسعه وب‌سایت</li>
+            <li>طراحی رابط کاربری</li>
+            <li>بهینه‌سازی سئو</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© ۱۴۰۵ کیان حسینی نسب - تمامی حقوق محفوظ است.</p>
+      </div>
+    </footer>
+
+    <!-- اسکریپت‌ها -->
+    <script src="../js/index.js"></script>
+  </body>
+</html>

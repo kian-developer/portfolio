@@ -1,0 +1,30 @@
+@font-face {
+  font-family: vazir;
+  src: url(../font/Vazir.ttf);
+}
+
+@font-face {
+  font-family: iransans;
+  src: url(../font/IranianSans.ttf);
+}
+
+@keyframes floatAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px); /* میزان بالا رفتن آیکون (به پیکسل) */
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fillProgress {
+  from {
+    width: 0%;
+  }
+  to {
+    width: var(--target-width);
+  }
+}

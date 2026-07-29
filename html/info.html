@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>درباره من | اطلاعات شخصی و مهارت‌ها</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/info.css" />
+    <!-- سرویس واقعی ارسال ایمیل -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+  </head>
+  <body>
+    <!-- هدر -->
+    <header>
+      <a href="index.html" class="logo">K.</a>
+      <button class="hamburger" id="hamburger" aria-label="منو">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="navMenu">
+        <ul>
+          <li><a href="index.html" class="nav-link">صفحه اصلی</a></li>
+          <li><a href="info.html" class="nav-link active">اطلاعات من</a></li>
+          <li><a href="projects.html" class="nav-link">پروژه‌ها</a></li>
+          <li><a href="contact.html" class="nav-link">تماس با من</a></li>
+        </ul>
+      </nav>
+      <a href="projects.html" class="btn-cv">مشاهده پروژه‌ها</a>
+    </header>
+
+    <main class="info-container">
+      <!-- ۱. بخش معرفی اصلی در مرکز -->
+      <section class="info-hero reveal">
+        <div class="avatar-wrapper">
+          <i class="fas fa-user-astronaut avatar-icon"></i>
+        </div>
+        <span class="badge">درباره من</span>
+        <h1>
+          توسعه‌دهنده <span>فرانت‌اند</span> و برنامه‌نویس <span>کوتلین</span>
+        </h1>
+        <p class="hero-desc">
+          علاقه‌مند به خلق رابط‌های کاربری مدرن، سیستم‌های پویا و نرم‌افزارهای
+          اندروید با بیشترین کارایی و زیبایی بصری.
+        </p>
+      </section>
+
+      <!-- ۲. کارت مهارت‌ها و تخصصی‌ها -->
+      <section class="info-section reveal">
+        <h2 class="section-title">
+          <i class="fas fa-code"></i> مهارت‌های تخصصـی
+        </h2>
+        <div class="skills-center-grid">
+          <div class="skill-card">
+            <i class="fab fa-html5 skill-icon html"></i>
+            <h3>HTML5 & CSS3</h3>
+            <p>
+              طراحی وب‌سایت‌های واکنش‌گرا و مدرن با افکت‌های CSS و Glassmorphism
+            </p>
+          </div>
+
+          <div class="skill-card">
+            <i class="fab fa-js skill-icon js"></i>
+            <h3>JavaScript</h3>
+            <p>توسعه منطق‌های برنامه‌نویسی وب، انیمیشن‌ها و تعامل با APIها</p>
+          </div>
+
+          <div class="skill-card">
+            <i class="fab fa-android skill-icon android"></i>
+            <h3>Kotlin & Android</h3>
+            <p>
+              توسعه اپلیکیشن‌های موبایل با معماری ViewModel و رابط کاربری
+              کاربرپسند
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ۳. کارت فرم ارسال ایمیل واقعی -->
+      <section class="info-section reveal">
+        <h2 class="section-title">
+          <i class="fas fa-envelope-open-text"></i> ارسال پیام مستقیم به ایمیل
+          من
+        </h2>
+        <div class="contact-card-centered">
+          <form id="contactForm" class="centered-form">
+            <div class="form-group">
+              <label for="userName"><i class="fas fa-user"></i> نام شما</label>
+              <input
+                type="text"
+                id="userName"
+                name="from_name"
+                placeholder="مثلا: علی محمدی"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="userEmail"
+                ><i class="fas fa-at"></i> ایمیل یا شماره تماس</label
+              >
+              <input
+                type="text"
+                id="userEmail"
+                name="reply_to"
+                placeholder="email@example.com"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="userMessage"
+                ><i class="fas fa-comment-alt"></i> متن پیام</label
+              >
+              <textarea
+                id="userMessage"
+                name="message"
+                rows="4"
+                placeholder="پیام خود را بنویسید..."
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" id="sendBtn" class="btn-send-email">
+              <i class="fas fa-paper-plane"></i> ارسال پیام به ایمیل
+            </button>
+
+            <div id="formStatus" class="form-status"></div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <a href="index.html" class="logo">K.</a>
+        <p>© تمامی حقوق محفوظ است.</p>
+      </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+    <script src="../js/info.js"></script>
+  </body>
+</html>

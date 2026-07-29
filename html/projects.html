@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>نمونه‌کارها | پروژه‌های من</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/projects.css" />
+  </head>
+  <body>
+    <!-- هدر -->
+    <header>
+      <a href="index.html" class="logo">K.</a>
+      <button class="hamburger" id="hamburger" aria-label="منو">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="navMenu">
+        <ul>
+          <li><a href="index.html" class="nav-link">صفحه اصلی</a></li>
+          <li><a href="info.html" class="nav-link">اطلاعات من</a></li>
+          <li><a href="projects.html" class="nav-link active">پروژه‌ها</a></li>
+          <li><a href="contact.html" class="nav-link">تماس با من</a></li>
+        </ul>
+      </nav>
+      <a href="contact.html" class="btn-cv">شروع همکاری</a>
+    </header>
+
+    <!-- بخش اصلی معرفی -->
+    <section class="projects-hero reveal">
+      <span class="badge">پورتفولیو اختصاصی</span>
+      <h1 class="hero-title">پروژه‌ها و <span>نمونه‌کارهای</span> من</h1>
+      <p class="subtitle">
+        مجموعه‌ای از <span class="highlight-text">پروژه‌های فرانت‌اند</span>،
+        <span class="highlight-text">برنامه‌های کاربردی</span> و
+        <span class="highlight-text">ایده‌های در حال توسعه</span>.
+      </p>
+    </section>
+
+    <!-- فیلتر پروژه‌ها -->
+    <div class="filter-container reveal">
+      <button class="filter-btn active" data-filter="all">
+        <i class="fas fa-border-all"></i> همه پروژه‌ها
+      </button>
+      <button class="filter-btn" data-filter="web">
+        <i class="fas fa-code"></i> وب و فرانت‌اند
+      </button>
+      <button class="filter-btn" data-filter="app">
+        <i class="fas fa-mobile-alt"></i> نرم‌افزار
+      </button>
+    </div>
+
+    <!-- شبکه کارت‌های ۲ پروژه برتر -->
+    <section class="projects-section reveal">
+      <div class="projects-grid" id="projects-grid"></div>
+    </section>
+
+    <footer>
+      <div class="footer-content">
+        <a href="index.html" class="logo">K.</a>
+        <p>© تمامی حقوق محفوظ است.</p>
+      </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+    <script src="../js/projects.js"></script>
+  </body>
+</html>

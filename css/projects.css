@@ -1,0 +1,180 @@
+/* استایل بخش اصلی معرفی */
+.projects-hero {
+  padding-top: 9rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.hero-title span {
+  color: var(--accent-neon);
+  text-shadow: 0 0 15px rgba(0, 255, 204, 0.4);
+}
+
+.subtitle {
+  color: var(--text-gray);
+  max-width: 650px;
+  margin: 1rem auto 0;
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+.highlight-text {
+  color: #c4b5fd;
+  border-bottom: 1px dashed var(--primary-purple);
+  padding-bottom: 2px;
+}
+
+/* دکمه‌های فیلتر */
+.filter-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 2.5rem 0;
+  padding: 0 8%;
+}
+
+.filter-btn {
+  padding: 0.7rem 1.5rem;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--card-border);
+  color: var(--text-gray);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  backdrop-filter: blur(10px);
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: var(--primary-purple);
+  border-color: var(--accent-neon);
+  color: var(--text-white);
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.5);
+}
+
+/* شبکه پروژه‌ها */
+.projects-section {
+  padding: 1rem 8% 5rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  perspective: 1000px;
+}
+
+.project-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 18px;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  transform-style: preserve-3d;
+  transition:
+    border-color 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+.project-card:hover {
+  border-color: var(--accent-neon);
+  box-shadow: 0 15px 35px rgba(0, 255, 204, 0.15);
+}
+
+.project-image {
+  height: 170px;
+  background: rgba(255, 255, 255, 0.02);
+  border-bottom: 1px solid var(--card-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transform: translateZ(20px);
+}
+
+.project-icon {
+  font-size: 3.8rem;
+  color: var(--accent-neon);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-icon {
+  transform: scale(1.1) translateZ(30px);
+}
+
+.category-tag {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: rgba(9, 10, 15, 0.85);
+  border: 1px solid var(--card-border);
+  color: var(--accent-neon);
+  padding: 0.2rem 0.7rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+}
+
+.project-body {
+  padding: 1.5rem;
+  transform: translateZ(15px);
+}
+
+.project-body h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.6rem;
+  color: var(--text-white);
+}
+
+.project-body p {
+  color: var(--text-gray);
+  font-size: 0.9rem;
+  margin-bottom: 1.2rem;
+  line-height: 1.6;
+}
+
+.tech-stack {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.tech-stack span {
+  background: rgba(139, 92, 246, 0.15);
+  color: #c4b5fd;
+  padding: 0.25rem 0.7rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  border: 1px solid rgba(139, 92, 246, 0.3);
+}
+
+.project-links {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.btn-project-link,
+.btn-project-github {
+  text-decoration: none;
+  font-size: 0.88rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: color 0.3s ease;
+}
+
+.btn-project-link {
+  color: var(--accent-neon);
+}
+.btn-project-github {
+  color: var(--text-gray);
+}
+.btn-project-link:hover,
+.btn-project-github:hover {
+  color: var(--text-white);
+}
