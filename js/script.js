@@ -86,3 +86,41 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+document.addEventListener("DOMContentLoaded", () => {
+  const skillCards = document.querySelectorAll(".skill-card");
+
+  // تنظیم انیمیشن ورود کارت‌ها و پر شدن نوار پیشرفت هنگام اسکرول
+  const observerOptions = {
+    threshold: 0.2,
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, index) => {
+      if (entry.isIntersecting) {
+        // تاخیر پله‌ای برای ورود کارت‌ها
+        setTimeout(() => {
+          entry.target.style.opacity = "1";
+          entry.target.style.transform = "translateY(0)";
+
+          // پر شدن نوار پیشرفت
+          const progressFill = entry.target.querySelector(".progress-fill");
+          if (progressFill) {
+            const targetWidth =
+              progressFill.style.getPropertyValue("--target-width");
+            progressFill.style.width = targetWidth;
+          }
+        }, index * 100);
+
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  // آماده‌سازی اولیه کارت‌ها برای انیمیشن ورود
+  skillCards.forEach((card) => {
+    card.style.opacity = "0";
+    card.style.transform = "translateY(30px)";
+    card.style.transition = "all 0.6s ease-out";
+    observer.observe(card);
+  });
+});
