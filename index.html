@@ -10,8 +10,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
     <!-- فایل استایل مجزا -->
-     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
     <!-- افکت ذرات و هاله پس‌زمینه -->
@@ -184,48 +184,233 @@
     </section>
 
     <!-- پروژه‌ها -->
-    <section class="projects reveal" id="projects">
-      <span class="section-tag">پروژه‌های اخیر</span>
-      <h2>چند نمونه از کارهایی که انجام دادم</h2>
-
-      <div class="filter-btns">
-        <button class="filter-btn active" data-filter="all">همه</button>
-        <button class="filter-btn" data-filter="web">وب‌سایت</button>
-        <button class="filter-btn" data-filter="app">اپلیکیشن</button>
-        <button class="filter-btn" data-filter="ui">طراحی رابط کاربری</button>
+    <!-- بخش پروژه‌ها -->
+    <section id="projects" class="projects-section reveal">
+      <div class="section-header">
+        <span class="section-tag">نمونه‌کارها</span>
+        <h2 class="glow-text">پروژه‌های برجسته من</h2>
+        <p class="section-desc">
+          مجموعه‌ای از پروژه‌های وب‌سایت، پنل‌های مدیریت و سامانه‌های تعاملی
+          پیاده‌سازی‌شده
+        </p>
       </div>
 
+      <!-- دکمه‌های فیلتر پروژه‌ها -->
+      <div class="filter-wrapper">
+        <button class="filter-btn active" data-filter="all">
+          همه پروژه‌ها
+        </button>
+        <button class="filter-btn" data-filter="web">وب‌سایت‌ها</button>
+        <button class="filter-btn" data-filter="dashboard">
+          داشبورد و پنل
+        </button>
+        <button class="filter-btn" data-filter="app">اپلیکیشن و ابزار</button>
+      </div>
+
+      <!-- شبکه پروژه‌ها -->
       <div class="projects-grid">
+        <!-- پروژه ۱: سایت رستوران حرفه‌ای -->
         <div class="project-card tilt-card" data-category="web">
-          <img
-            src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&auto=format&fit=crop"
-            alt="پروژه وب"
-          />
-          <div class="project-info">
-            <h3 class="project-title">وب‌سایت فروشگاهی</h3>
-            <p class="project-desc">طراحی و توسعه فروشگاه آنلاین با React</p>
+          <div class="project-banner">
+            <i class="fas fa-utensils project-icon"></i>
+            <span class="project-badge">ویژه</span>
+          </div>
+          <div class="project-content">
+            <h3>سایت رستوران حرفه‌ای</h3>
+            <p>
+              سامانه سفارش‌دهی غذا همراه با منوی تعاملی، سبد خرید زنده و جستجوی
+              پیشرفته به همراه انیمیشن‌های جذاب.
+            </p>
+            <div class="project-tags">
+              <span>منوی آنلاین</span>
+              <span>سبد خرید</span>
+              <span>جستجو</span>
+              <span>انیمیشن</span>
+              <span>ریسپانسیو</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://github.com/kian-developer"
+                target="_blank"
+                class="btn-project-link"
+              >
+                <i class="fab fa-github"></i> سورس‌کد
+              </a>
+              <a href="#" class="btn-project-link primary">
+                <i class="fas fa-external-link-alt"></i> پیش‌نمایش
+              </a>
+            </div>
           </div>
         </div>
-        <div class="project-card tilt-card" data-category="web">
-          <img
-            src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&auto=format&fit=crop"
-            alt="پنل مدیریت"
-          />
-          <div class="project-info">
-            <h3 class="project-title">پنل مدیریتی</h3>
-            <p class="project-desc">پنل مدیریت حرفه‌ای با داشبوردهای پیشرفته</p>
+
+        <!-- پروژه ۲: داشبورد مدیریت -->
+        <div class="project-card tilt-card" data-category="dashboard">
+          <div class="project-banner">
+            <i class="fas fa-chart-line project-icon"></i>
+          </div>
+          <div class="project-content">
+            <h3>داشبورد مدیریت حرفه‌ای</h3>
+            <p>
+              پنل تحلیلی داده‌ها همراه با نمودارهای پویا، جداول مدیریت داده،
+              فیلترگذاری لحظه‌ای و قابلیت تغییر تم تاریک.
+            </p>
+            <div class="project-tags">
+              <span>نمودار</span>
+              <span>جدول</span>
+              <span>فیلتر</span>
+              <span>Dark Mode</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://github.com/kian-developer"
+                target="_blank"
+                class="btn-project-link"
+              >
+                <i class="fab fa-github"></i> سورس‌کد
+              </a>
+              <a href="#" class="btn-project-link primary">
+                <i class="fas fa-external-link-alt"></i> پیش‌نمایش
+              </a>
+            </div>
           </div>
         </div>
+
+        <!-- پروژه ۳: وب‌سایت شرکتی لوکس -->
+        <div class="project-card tilt-card" data-category="web">
+          <div class="project-banner">
+            <i class="fas fa-building project-icon"></i>
+          </div>
+          <div class="project-content">
+            <h3>وب‌سایت شرکتی لوکس</h3>
+            <p>
+              طراحی وب‌سایت تجاری مدرن با افکت‌های اسکرول انیمیشنی، شمارنده‌های
+              آمار، فرم تماس مستقیم و بخش سوالات متداول.
+            </p>
+            <div class="project-tags">
+              <span>اسکرول انیمیشنی</span>
+              <span>شمارنده</span>
+              <span>فرم تماس</span>
+              <span>FAQ</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://github.com/kian-developer"
+                target="_blank"
+                class="btn-project-link"
+              >
+                <i class="fab fa-github"></i> سورس‌کد
+              </a>
+              <a href="#" class="btn-project-link primary">
+                <i class="fas fa-external-link-alt"></i> پیش‌نمایش
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- پروژه ۴: فروشگاه اینترنتی کوچک -->
+        <div class="project-card tilt-card" data-category="web">
+          <div class="project-banner">
+            <i class="fas fa-shopping-cart project-icon"></i>
+          </div>
+          <div class="project-content">
+            <h3>فروشگاه اینترنتی کوچک</h3>
+            <p>
+              پلتفرم فروشگاهی مدرن جهت ویترین محصولات، سیستم فیلتر بر اساس
+              دسته‌بندی، جستجوی آنی و محاسبه‌گر سبد خرید.
+            </p>
+            <div class="project-tags">
+              <span>محصولات</span>
+              <span>جستجو</span>
+              <span>فیلتر</span>
+              <span>سبد خرید</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://github.com/kian-developer"
+                target="_blank"
+                class="btn-project-link"
+              >
+                <i class="fab fa-github"></i> سورس‌کد
+              </a>
+              <a href="#" class="btn-project-link primary">
+                <i class="fas fa-external-link-alt"></i> پیش‌نمایش
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- پروژه ۵: سیستم رزرو نوبت -->
         <div class="project-card tilt-card" data-category="app">
-          <img
-            src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=500&auto=format&fit=crop"
-            alt="اپلیکیشن"
-          />
-          <div class="project-info">
-            <h3 class="project-title">اپلیکیشن موبایل</h3>
-            <p class="project-desc">طراحی اپلیکیشن موبایل با فلاتر</p>
+          <div class="project-banner">
+            <i class="fas fa-calendar-check project-icon"></i>
+          </div>
+          <div class="project-content">
+            <h3>سیستم رزرو نوبت آنلاین</h3>
+            <p>
+              ابزار رزرو زمان‌بندی‌شده با تقویم انتخاب تاریخ، تعیین ساعت‌های
+              کاری آزاد و ثبت نهایی اطلاعات مشتری.
+            </p>
+            <div class="project-tags">
+              <span>انتخاب تاریخ</span>
+              <span>انتخاب ساعت</span>
+              <span>ثبت اطلاعات</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://github.com/kian-developer"
+                target="_blank"
+                class="btn-project-link"
+              >
+                <i class="fab fa-github"></i> سورس‌کد
+              </a>
+              <a href="#" class="btn-project-link primary">
+                <i class="fas fa-external-link-alt"></i> پیش‌نمایش
+              </a>
+            </div>
           </div>
         </div>
+
+        <!-- پروژه ۶: پنل مدیریت فایل یا وظایف -->
+        <div class="project-card tilt-card" data-category="app">
+          <div class="project-banner">
+            <i class="fas fa-tasks project-icon"></i>
+          </div>
+          <div class="project-content">
+            <h3>پنل مدیریت فایل و وظایف</h3>
+            <p>
+              اپلیکیشن مدیریت کارهای روزمره (Task Manager) با امکانات کامل CRUD،
+              ذخیره‌سازی محلی (LocalStorage) و قابلیت Drag & Drop.
+            </p>
+            <div class="project-tags">
+              <span>CRUD</span>
+              <span>LocalStorage</span>
+              <span>Drag & Drop</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://github.com/kian-developer"
+                target="_blank"
+                class="btn-project-link"
+              >
+                <i class="fab fa-github"></i> سورس‌کد
+              </a>
+              <a href="#" class="btn-project-link primary">
+                <i class="fas fa-external-link-alt"></i> پیش‌نمایش
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- لینک کلی به پروفایل گیت‌هاب -->
+      <div class="github-more-wrapper">
+        <a
+          href="https://github.com/kian-developer"
+          target="_blank"
+          class="btn-primary glow-btn"
+        >
+          <i class="fab fa-github"></i> مشاهده تمام پروژه‌ها در GitHub
+        </a>
       </div>
     </section>
 

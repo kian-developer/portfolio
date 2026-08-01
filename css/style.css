@@ -859,3 +859,170 @@ footer {
 .social-btn:hover i {
   transform: scale(1.2);
 }
+/* ==============================================
+   استایل کامل بخش پروژه‌ها (Projects Section)
+   ============================================== */
+
+.projects-section {
+  padding: 5rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.filter-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.filter-btn {
+  padding: 0.6rem 1.4rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  color: var(--text-gray, #a0aec0);
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: var(--neon-cyan, #00ffcc);
+  color: #0d0f1b;
+  font-weight: bold;
+  box-shadow: 0 0 15px rgba(0, 255, 204, 0.4);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background: rgba(18, 20, 32, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(0, 255, 204, 0.4);
+  box-shadow: 0 10px 30px rgba(0, 255, 204, 0.15);
+}
+
+.project-banner {
+  height: 140px;
+  background: linear-gradient(135deg, rgba(0, 255, 204, 0.1), rgba(123, 97, 255, 0.15));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.project-icon {
+  font-size: 3.5rem;
+  color: var(--neon-cyan, #00ffcc);
+  filter: drop-shadow(0 0 8px rgba(0, 255, 204, 0.5));
+}
+
+.project-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: var(--neon-cyan, #00ffcc);
+  color: #0d0f1b;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 0.2rem 0.7rem;
+  border-radius: 20px;
+}
+
+.project-content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.project-content h3 {
+  color: #fff;
+  font-size: 1.25rem;
+  margin-bottom: 0.6rem;
+}
+
+.project-content p {
+  color: #a0aec0;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+  flex-grow: 1;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.project-tags span {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #cbd5e0;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.6rem;
+  border-radius: 6px;
+}
+
+.project-links {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.btn-project-link {
+  flex: 1;
+  text-align: center;
+  padding: 0.6rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+}
+
+.btn-project-link:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #fff;
+}
+
+.btn-project-link.primary {
+  background: rgba(0, 255, 204, 0.1);
+  border-color: var(--neon-cyan, #00ffcc);
+  color: var(--neon-cyan, #00ffcc);
+}
+
+.btn-project-link.primary:hover {
+  background: var(--neon-cyan, #00ffcc);
+  color: #0d0f1b;
+  font-weight: bold;
+}
+
+.github-more-wrapper {
+  text-align: center;
+  margin-top: 3.5rem;
+}
